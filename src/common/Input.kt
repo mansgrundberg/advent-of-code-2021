@@ -16,7 +16,7 @@ class Input {
         fun asString(day: Int) = readInput(day);
 
         private fun readInput(day: Int): String {
-            val file: String = "resources/$day.txt"
+            val file: String = "resources/day$day.txt"
             return File(file).readText();
         }
     }
