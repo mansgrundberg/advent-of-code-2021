@@ -2,7 +2,6 @@ package days
 
 import common.*
 
-
 fun partOne(input: List<Int>): Int {
     return input.zipWithNext().count { it.first < it.second };
 }
@@ -12,6 +11,7 @@ fun partTwo(input: List<Int>): Int {
 }
 
 fun main() {
-    println(partOne(Input.asIntList(1)));
-    println(partTwo(Input.asIntList(1)));
+    val input = Input.asIntList(1);
+    println(partOne(input));
+    println(partTwo(input));
 }
