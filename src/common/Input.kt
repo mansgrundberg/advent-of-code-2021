@@ -6,7 +6,9 @@ class Input {
     companion object {
 
         fun asCharMatrix(day: Int): List<List<Char>> {
-            return asStringList(day).map { row -> row.toCharArray().map { it.toChar() } }
+            return asStringList(day).map { row ->
+                row.toCharArray().map { it }
+            }
         }
 
         fun asIntList(day: Int): List<Int> = asStringList(day).map { it.toInt() };
